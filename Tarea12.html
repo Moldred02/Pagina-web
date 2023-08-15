@@ -1,0 +1,139 @@
+<html lang="en">
+    
+    <head>
+        <title>Tarea#12</title>
+        <link href="CSS/menu.css"  rel="stylesheet" type="text/css"  />
+    </head>
+	
+	<body>
+	
+		<div class="logo">
+		<img id="H" src="img_html/img_logo.jpg"/>
+		<h4>Hugo Alejandro García Rodríguez</h4>
+		<h4 id="matricula">1945201</h4>
+		<h4>ITS</h4>
+		<h4>Semestre 3</h4>
+		</div>
+		
+	<div class="titulo13" >
+			<div class="capa"></div>
+				<div class="contenedor">
+					<div class="texto_t">
+						
+						<h1 >Ada</h1>
+						<p>Tarea #12</p>
+						
+					</div>
+				</div>
+		</div>
+	
+	
+	
+	
+	
+	
+		
+		<div class="main">
+			<div class="info">
+				<h1><span>Introducción</span><br></h1><hr><br><br>
+				
+				<p> Ha sido utilizado principalmente, en el desarrollo de software de control,
+				de tiempo real y de misión crítica. Típicamente, estos sistemas son responsables de 
+				procesos industriales y militares, muy costosos, y en los cuales incluso vidas humanas dependen
+				del buen funcionamiento del software. Es vital en tales sistemas, utilizar un lenguaje que como Ada, 
+				ayuda en la creación de software de alta calidad.</p>
+				
+				<h2><span>Símbolos</span></h2><hr id="hr2"><br><br>
+				
+				<ul>
+				
+				<li> =>   <span>es</span> usado en when,cases</li>
+				<li> ..   <span>es</span> usado para rangos</li>
+				<li> **   <span>es</span> para exponenciación</li>
+				<li> /=   <span>es</span> No igual </li>
+				<li> >=   <span>es</span> mayor o igual </li>
+				<li> <=  <span>es</span> menor o igual</li>
+				<li> <>  <span>es</span> Arreglos</li>
+				
+				
+				
+				</ul>
+				<br><br>
+				<h2><span>Sintaxis</span></h2><hr id="hr2"><br><br>
+				<ul>
+				
+				<li>  Es indiferente el uso de mayúsculas y minúsculas en los identificadores y palabras claves  </li><br>
+				<li>Todo el programa es un único procedimiento, que puede contener subprogramas  </li><br>
+				<li> Cada sentencia se cierra con end. </li><br>
+				<li> El operador de asignación es :=, el de igualdad =.  </li><br>
+				<li> Subprogramas <ul><li>Definen algoritmos y se clasifican en procedimientos (procedure) y funciones (function).</li></ul>  </li><br>
+				<li> Package <ul><li>Definen módulos que son colecciones de entidades.</li></ul>  </li><br>
+				<li> Tareas <ul><li>Definen acciones que pueden ejecutarse en paralelo con otras.</li></ul>  </li><br>
+				<li> Unidades protegidas <ul><li>Sirven para coordinar la compartición de datos entre tareas concurrentes.</li></ul>  </li><br>
+				<li> Unidades genéricas <ul><li>Sirven para definir componentes reusables.</li></ul>  </li><br>
+				
+				
+				
+				
+				</ul>
+				
+				
+				<h2><span>Esqueleto</span></h2><hr id="hr2"><br><br>
+				<pre><code>
+package variable
+	type
+	record:
+	end record;
+end variable:
+
+				
+				
+				</code></pre>
+				<h2><span>Aplicación</span></h2><hr id="hr2"><br><br>
+				<p>El compilador se llama   <span>GNAT</span></p><br>
+				
+				<h2><span>Paradigma</span></h2><hr id="hr2"><br><br>
+				<p>Ada es   <span>multiparadigma</span>, orientado a objetos e imperativo </p><br>
+				
+				<h2><span>Ejemplo</span></h2><hr id="hr2"><br><br>
+				<div class="Ejemplo">
+				<pre><code>
+
+ package FUERZA-NAVA is
+--
+	type BUQUE-DE-GUERRA is	(CRUCERO, FRAGATA, SUBMARINO);	
+	subtype	CANTIDAD is	INTEGER	range	Ø..1.ØØ;
+	type TIPO-DE-BUQUE is
+	record	:	
+		NOMBRE: BUQUE-DE-GUERRA;
+		NUMERO-DE-BUQUES. CANTIDAD;
+	end	record;	
+--
+	task NAVES-ACTIVAS	is
+	entry CAMBIOS (NAVES-ACTOVAS: out TIPO-DE-BUQUE);
+	end	NAVES-ACTIVAS;	
+end	FUERZA-NAVAL:	
+					
+				</code></pre>
+				
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	<div class="footer">
+			<div class="ifooter">
+				<div class="i_info">
+					<a  class="fboton" id="f1" href="Tarea11.html"  >Anterior</a>
+					<a  class="fboton" href="menu.html"  >Menu</a>
+					<a  class="fboton" id="f2" href="Tarea13.html"  >Siguiente</a>
+				</div>
+			</div>
+		
+		</div>
+		
+	
+		
+	</body>
+</html>

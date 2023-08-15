@@ -1,0 +1,124 @@
+<html lang="en">
+    
+    <head>
+        <title>Tarea#7</title>
+        <link href="CSS/menu.css"  rel="stylesheet" type="text/css"  />
+    </head>
+	
+	<body>
+	
+		<div class="logo">
+		<img id="H" src="img_html/img_logo.jpg"/>
+		<h4>Hugo Alejandro García Rodríguez</h4>
+		<h4 id="matricula">1945201</h4>
+		<h4>ITS</h4>
+		<h4>Semestre 3</h4>
+		</div>
+		
+	<div class="titulo8" >
+			<div class="capa"></div>
+				<div class="contenedor">
+					<div class="texto_t">
+						
+						<h1 >Scheme</h1>
+						<p>Tarea #07</p>
+						
+					</div>
+				</div>
+		</div>
+	
+	
+	
+	
+	
+	
+		
+		<div class="main">
+			<div class="info">
+				<h1><span>Introducción</span><br></h1><hr><br><br>
+				
+				<p>El propósito de Scheme fué hacer un lenguaje que no tuviera muchas características y que fuera una semántica
+				clara y sencilla, su desarrollo fué lento pero es ocnsiderado como uno de los lenguajes mejor
+				diseñados.</p>
+				
+				<h2><span>Símbolos</span></h2><hr id="hr2"><br><br>
+				
+				<ul>
+				
+				<li> + <span>es</span> Suma </li>
+				<li>-<span>es</span> Resta</li>
+				<li> *  <span>es</span> Multipliación</li>
+				<li> / <span>es</span> División </li>
+				<li> sqrt <span>es</span> Raíz Cuadrada </li>
+				<li> exp <span>es</span> Exponencial </li>
+				
+				</ul>
+				<br><br>
+				<h2><span>Sintaxis</span></h2><hr id="hr2"><br><br>
+				<ul>
+				
+				<li> Expresión -> átomo | lista </li><br>
+				<li>átomo -> número | string | identificador | carácter | boolean</li><br>
+				<li> lista -> '(' secuencia-expresión ')'</li><br>
+				<li>secuencia-expresión -> expresión secuencia - expresión | expresión </li><br>
+				<li> función -> ( nombre_función argumento1 argumento 2... argumento n) </li><br>
+				
+				
+				</ul>
+				
+				
+				<h2><span>Esqueleto</span></h2><hr id="hr2"><br><br>
+				<pre><code>
+(Define variable valor)
+(Display "")
+				
+				
+				</code></pre>
+				<h2><span>Aplicación</span></h2><hr id="hr2"><br><br>
+				<p>Se puede editar y compilar en <span>DrScheme</span> buscando las librerias de python y descargandolas</p><br>
+				
+				<h2><span>Paradigma</span></h2><hr id="hr2"><br><br>
+				<p>Scheme es <span>multiparadigma</span> pero es más funcional </p><br>
+				
+				<h2><span>Ejemplo</span></h2><hr id="hr2"><br><br>
+				<div class="Ejemplo">
+				<pre><code>
+(define (T) ;lo que hacemos con esta función es la figura con la que se ;llenara el triángulo
+(display "*"))
+
+(define (dibuje cant) ;esta funcion me dibuja los "*" pasando un espacio :entre ellos
+   (do ((i 0 (+ i 1)))
+       ((= i cant) )
+     (t)
+     (display " ")))
+
+(define (triangulo) ;y esta es la que me dibuja el triangulo aquí defino ;que el tamaño sea de 10 *'s
+   (do ((i 1 (+ i 1)));observa como se hace el ciclo :D
+         ((= i 10) )
+     (dibuje i);llamada a la funcion
+     (newline)));pasa renglon
+    				
+					
+				</code></pre>
+				
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	<div class="footer">
+			<div class="ifooter">
+				<div class="i_info">
+					<a  class="fboton" id="f1" href="Tarea6.html"  >Anterior</a>
+					<a  class="fboton" href="menu.html"  >Menu</a>
+					<a  class="fboton" id="f2" href="Tarea8.html"  >Siguiente</a>
+				</div>
+			</div>
+		
+		</div>
+		
+	
+		
+	</body>
+</html>

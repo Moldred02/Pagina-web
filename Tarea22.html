@@ -1,0 +1,157 @@
+<html lang="en">
+    
+    <head>
+        <title>Tarea#22</title>
+        <link href="CSS/menu.css"  rel="stylesheet" type="text/css"  />
+    </head>
+	
+	<body>
+	
+		<div class="logo">
+		<img id="H" src="img_html/img_logo.jpg"/>
+		<h4>Hugo Alejandro García Rodríguez</h4>
+		<h4 id="matricula">1945201</h4>
+		<h4>ITS</h4>
+		<h4>Semestre 3</h4>
+		</div>
+		
+	<div class="titulo23" >
+			<div class="capa"></div>
+				<div class="contenedor">
+					<div class="texto_t">
+						
+						<h1 >Multiplicación-Matrices</h1>
+						<p>Tarea #22</p>
+						
+					</div>
+				</div>
+		</div>
+	
+	
+	
+	
+	
+	
+		
+		<div class="main">
+			<div class="info">
+				<h1><span>Código</span><br></h1><hr><br><br>
+				
+				
+				
+				
+				
+				<pre><code>
+//Nombre: Hugo Alejandro Garcia Rodriguez
+//Matricula: 1945201
+//Grupo: 011
+//Clase: Lenguajes de programacion
+
+
+import java.util.Scanner;
+
+public class tarea22 {
+
+
+    public static void main(String[]args)
+    {
+        var lec= new Scanner(System.in);
+
+        int i,m,j;
+        System.out.println("Dimension de las matrices?: ");
+        m= lec.nextInt();
+        int[][] A = new int[m][m];
+        int [][] B= new int[m][m];
+        int [][] C= new int[m][m];
+
+        System.out.println("Primera matriz: ");
+
+        for(i=0; i<code class="code">m</code>; i++)
+        {
+            for (j=0; j<code class="code">m</code>; j++)
+            {
+                System.out.println("Digite el numero de la posicion ["+ (i+1)+"]"+"["+(j+1)+"]");
+                 A[i][j]= lec.nextInt();
+                
+                
+            }
+            
+        }
+
+        System.out.println("\n\n\n\nSegunda matriz: ");
+
+        for(i=0; i<code class="code">m</code>; i++)
+        {
+            for (j=0; j<code class="code">m</code>; j++)
+            {
+                System.out.println("Digite el numero de la posicion ["+ (i+1)+"]"+"["+(j+1)+"]");
+                 B[i][j]= lec.nextInt();
+                
+                
+            }
+            
+        }
+        
+        for(i=0; i<code class="code">m</code>; i++)
+        {
+            for (j=0; j<code class="code">m</code>; j++)
+            {
+               
+                 C[i][j]= A[i][j]*B[i][j];
+                
+                
+            }
+            
+        }
+
+        System.out.println("\n\nEl resultado del producto de matrices es:\n");
+
+        for(i=0; i<code class="code">m</code>; i++)
+        {
+            for (j=0; j<code class="code">m</code>; j++)
+            {
+               
+                System.out.print("\t"+C[i][j]);
+                
+                
+            }
+            System.out.println("");
+        }
+
+
+
+
+    
+    }
+
+}
+
+
+
+
+				
+				
+			</code></pre>
+				
+				
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	<div class="footer">
+			<div class="ifooter">
+				<div class="i_info">
+					<a  class="fboton" id="f1" href="Tarea21.html"  >Anterior</a>
+					<a  class="fboton" href="menu.html"  >Menu</a>
+					<a  class="fboton" id="f2" href="Tarea1.html"  >Siguiente</a>
+				</div>
+			</div>
+		
+		</div>
+		
+	
+		
+	</body>
+</html>

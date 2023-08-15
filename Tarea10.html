@@ -1,0 +1,127 @@
+<html lang="en">
+    
+    <head>
+        <title>Tarea#10</title>
+        <link href="CSS/menu.css"  rel="stylesheet" type="text/css"  />
+    </head>
+	
+	<body>
+	
+		<div class="logo">
+		<img id="H" src="img_html/img_logo.jpg"/>
+		<h4>Hugo Alejandro García Rodríguez</h4>
+		<h4 id="matricula">1945201</h4>
+		<h4>ITS</h4>
+		<h4>Semestre 3</h4>
+		</div>
+		
+	<div class="titulo11" >
+			<div class="capa"></div>
+				<div class="contenedor">
+					<div class="texto_t">
+						
+						<h1 >Gödel</h1>
+						<p>Tarea #10</p>
+						
+					</div>
+				</div>
+		</div>
+	
+	
+	
+	
+	
+	
+		
+		<div class="main">
+			<div class="info">
+				<h1><span>Introducción</span><br></h1><hr><br><br>
+				
+				<p>Tiene ese nombre en honor a Kurt Gödel y es un lenguaje fuertemente tipado con un sistema de tipos
+				basados en many sorted logic con polimorfismo parametizado.</p>
+				
+				<h2><span>Símbolos</span></h2><hr id="hr2"><br><br>
+				<p>Los números se construyen con referencia a los símbolos</p>
+				<ul>
+				
+				<li> ¬<span>es</span> 1</li>
+				<li>∀<span>es</span> 2</li>
+				<li> →  <span>es</span> 3</li>
+				<li> ∨  <span>es</span> 4  </li>
+				<li> ∧<span>es</span> 5  </li>
+				
+				
+				</ul>
+				<br><br>
+				<h2><span>Sintaxis</span></h2><hr id="hr2"><br><br>
+				<ul>
+				
+				<li> Admite conjuntos finitos  </li><br>
+				<li>Permite enteros y racionales de precisión arbitraria y números de punto flotante </li><br>
+				<li> Se basa en módulos </li><br>
+				
+				
+				
+				</ul>
+				
+				
+				<h2><span>Esqueleto</span></h2><hr id="hr2"><br><br>
+				<pre><code>
+Module
+Import
+Predicate
+Module()<-
+				
+				
+				</code></pre>
+				<h2><span>Aplicación</span></h2><hr id="hr2"><br><br>
+				<p>Es dìficil que en la actualidad se pueda  <span>correr</span></p><br>
+				
+				<h2><span>Paradigma</span></h2><hr id="hr2"><br><br>
+				<p>Gödel es <span>Lógica</span> </p><br>
+				
+				<h2><span>Ejemplo</span></h2><hr id="hr2"><br><br>
+				<div class="Ejemplo">
+				<pre><code>
+
+MODULE      MCD.
+IMPORT      Integers.
+ 
+PREDICATE   Mcd : Integer * Integer * Integer.
+Mcd(i,j,d) <- 
+           DivisorComun(i,j,d) &
+           ~ SOME [e] (DivisorComun(i,j,e) & e > d).
+ 
+PREDICATE   DivisorComun : Integer * Integer * Integer.
+DivisorComun(i,j,d) <-
+           IF (i = 0 \/ j = 0)
+           THEN
+             d = Max(Abs(i),Abs(j))
+           ELSE
+             1 =< d =< Min(Abs(i),Abs(j)) &
+             i Mod d = 0 &
+             j Mod d = 0.
+					
+				</code></pre>
+				
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	<div class="footer">
+			<div class="ifooter">
+				<div class="i_info">
+					<a  class="fboton" id="f1" href="Tarea9.html"  >Anterior</a>
+					<a  class="fboton" href="menu.html"  >Menu</a>
+					<a  class="fboton" id="f2" href="Tarea11.html"  >Siguiente</a>
+				</div>
+			</div>
+		
+		</div>
+		
+	
+		
+	</body>
+</html>

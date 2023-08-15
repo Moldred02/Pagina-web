@@ -1,0 +1,118 @@
+<html lang="en">
+    
+    <head>
+        <title>Tarea#16</title>
+        <link href="CSS/menu.css"  rel="stylesheet" type="text/css"  />
+    </head>
+	
+	<body>
+	
+		<div class="logo">
+		<img id="H" src="img_html/img_logo.jpg"/>
+		<h4>Hugo Alejandro García Rodríguez</h4>
+		<h4 id="matricula">1945201</h4>
+		<h4>ITS</h4>
+		<h4>Semestre 3</h4>
+		</div>
+		
+	<div class="titulo17" >
+			<div class="capa"></div>
+				<div class="contenedor">
+					<div class="texto_t">
+						
+						<h1 >Conversion-Temperatura</h1>
+						<p>Tarea #16</p>
+						
+					</div>
+				</div>
+		</div>
+	
+	
+	
+	
+	
+	
+		
+		<div class="main">
+			<div class="info">
+				<h1><span>Código</span><br></h1><hr><br><br>
+				
+				
+				
+				
+				
+				<pre><code>
+
+//Nombre: Hugo Alejandro Garcia Rodriguez
+//Matricula: 1945201
+//Grupo: 011
+//Clase: Lenguajes de programacion
+
+import javax.swing.JOptionPane;
+
+public class tarea16 {
+    public static void main(String[] args)
+    {
+        String [] menu={"Grados Centigrados a F","Grados Farenheit a C"};
+        int opcion;
+        float t;
+        double g;
+
+         t = Float.parseFloat(JOptionPane.showInputDialog(null, "Digite la temperatura:")); 
+
+        
+        opcion = JOptionPane.showOptionDialog ( null, "Conversion de: ", "A continuación se le mostrara:", 
+                         JOptionPane.YES_NO_CANCEL_OPTION,  JOptionPane.INFORMATION_MESSAGE, 
+                         null, 
+                         menu,  menu[0]);
+
+
+        switch(opcion)
+        {
+            case 0:
+                g= (t*1.8)+32;
+                System.out.println("Son "+g+" graods Farenheit");
+                break;
+            case 1:
+                g= (t-32)/1.8;
+                System.out.println("Son "+g+" graods Centigrados");
+                break;
+            default:
+                System.out.println("Ha ocurrido un error.");
+                break;
+        }
+
+    }
+}
+
+
+
+
+
+
+				
+				
+				</code></pre>
+				
+				
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	<div class="footer">
+			<div class="ifooter">
+				<div class="i_info">
+					<a  class="fboton" id="f1" href="Tarea15.html"  >Anterior</a>
+					<a  class="fboton" href="menu.html"  >Menu</a>
+					<a  class="fboton" id="f2" href="Tarea17.html"  >Siguiente</a>
+				</div>
+			</div>
+		
+		</div>
+		
+	
+		
+	</body>
+</html>

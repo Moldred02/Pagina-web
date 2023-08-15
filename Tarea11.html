@@ -1,0 +1,166 @@
+<html lang="en">
+    
+    <head>
+        <title>Tarea#11</title>
+        <link href="CSS/menu.css"  rel="stylesheet" type="text/css"  />
+    </head>
+	
+	<body>
+	
+		<div class="logo">
+		<img id="H" src="img_html/img_logo.jpg"/>
+		<h4>Hugo Alejandro García Rodríguez</h4>
+		<h4 id="matricula">1945201</h4>
+		<h4>ITS</h4>
+		<h4>Semestre 3</h4>
+		</div>
+		
+	<div class="titulo12" >
+			<div class="capa"></div>
+				<div class="contenedor">
+					<div class="texto_t">
+						
+						<h1 >Cobol</h1>
+						<p>Tarea #11</p>
+						
+					</div>
+				</div>
+		</div>
+	
+	
+	
+	
+	
+	
+		
+		<div class="main">
+			<div class="info">
+				<h1><span>Introducción</span><br></h1><hr><br><br>
+				
+				<p>Fué creado como con el objetivo de crear un lenguaje de programación universal que pudiera ser usado en
+				cualquier ordenador y que se centrara a los negocios, en 1970 era el lenguaje más utilizado en el mundo y 
+				actualmente se sigue utilizando.</p>
+				
+				<h2><span>Símbolos</span></h2><hr id="hr2"><br><br>
+				
+				<ul>
+				
+				<li> +   <span>es</span> Suma</li>
+				<li> -   <span>es</span> Resta</li>
+				<li> *   <span>es</span> Asterisco</li>
+				<li> /   <span>es</span> Barra de división  </li>
+				<li> =   <span>es</span> Igual </li>
+				<li> .  <span>es</span> Punto</li>
+				<li>"   <span>es</span> Comillas</li>
+				<li> <   <span>es</span> Mayor que</li>
+				<li> >    <span>es</span> Menor que  </li>
+				<li> &   <span>es</span> Ampersand  </li>
+				
+				
+				</ul>
+				<br><br>
+				<h2><span>Sintaxis</span></h2><hr id="hr2"><br><br>
+				<ul>
+				
+				<li>  Las palabras en mayúsculas son siempre palabras reservadas  </li><br>
+				<li>Las palabras con mayúsculas y minúsculas representan nombres, y como tal, deben ser ideados por los propios programadores </li><br>
+				<li> Cuando hay material encerrado entre llaves { }, se trata de opciones que deben elegirse de entre los elementos contenidos, como si de un conjunto algebraico se tratase. </li><br>
+				<li>  Cuando hay elementos encerrados entre corchetes [ ], indica que el material es opcional, y puede ser incluido u omitido según se requiera.  </li><br>
+				<li>  Cuando se encuentran puntos suspensivos ... indica que el elemento sintáctico precedente puede ser repetido o continuado a voluntad del programador.</li><br>
+				
+				
+				</ul>
+				
+				
+				<h2><span>Esqueleto</span></h2><hr id="hr2"><br><br>
+				<pre><code>
+1.-IDENTIFICATION DIVISION. Se capturan datos informativos del programa
+
+2.- ENVIRONMENT DIVISION. Señalar en que equipo se ejecutara nuestro programa y que archivos usará y consta de 2 secciones
+
+– CONFIGURATION SECTION
+– INPUT-OUTPUT SECTION
+
+3.- DATA DIVISION. Definir los formatos de los archivos y las áreas de trabajo que se usaran
+
+– FILE SECTION –> Sección de archivos.
+
+– WORKING STORAGE SECTION –> Definen las áreas que se van a utilizar en el programa.
+
+– LINKAGE SECTION –>
+
+4.- PROCEDURE DIVISION. Contiene toda la lógica e instrucciones que queremos que haga nuestro programa
+				
+				
+				</code></pre>
+				<h2><span>Aplicación</span></h2><hr id="hr2"><br><br>
+				<p>Se puede compilar en   <span>Tiny Cobol</span></p><br>
+				
+				<h2><span>Paradigma</span></h2><hr id="hr2"><br><br>
+				<p>Es <span>Imperativo</span> </p><br>
+				
+				<h2><span>Ejemplo</span></h2><hr id="hr2"><br><br>
+				<div class="Ejemplo">
+				<pre><code>
+
+ IDENTIFICATION DIVISION.
+       PROGRAM-ID. R4CZOSRM IS INITIAL PROGRAM.
+
+      * This COBOL program is generated from the following ruleset: miniloan
+      * Created at 2010/03/05 10:07:02.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+           COPY BRCCONST.
+           COPY BRCCONWS.
+       .
+       .
+       .
+    
+       LINKAGE SECTION.
+           COPY MINILOAN.
+
+       PROCEDURE DIVISION USING BORROWER LOAN.
+       TASK1-SMF.
+           INITIALIZE BRCC-CONN-AREA
+           MOVE "miniloan" TO BRCC-CONN-RULESET-NAME OF BRCC-R4C-DATA
+           MOVE "20100305" TO BRCC-CONN-CREATE-DATE OF BRCC-R4C-DATA
+           MOVE "100702" TO BRCC-CONN-CREATE-TIME OF BRCC-R4C-DATA
+           MOVE BRCC-CONN-RS OF BRCC-R4C-CONSTANTS TO 
+           BRCC-CONN-CREATE-METHOD OF BRCC-R4C-DATA
+           COPY BRCCINIT.
+           PERFORM TASK2-MAINFLOW
+           COPY BRCCTERM.
+           GOBACK.
+      * RuleFlow mainflow
+       TASK2-MAINFLOW.
+           PERFORM TASK3-MAINFLOW-VALIDATION
+           PERFORM TASK4-MAINFLOW-ELIGIBILITY.
+      * RuleTask mainflow#validation
+       .
+       .
+       .
+					
+				</code></pre>
+				
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	<div class="footer">
+			<div class="ifooter">
+				<div class="i_info">
+					<a  class="fboton" id="f1" href="Tarea10.html"  >Anterior</a>
+					<a  class="fboton" href="menu.html"  >Menu</a>
+					<a  class="fboton" id="f2" href="Tarea12.html"  >Siguiente</a>
+				</div>
+			</div>
+		
+		</div>
+		
+	
+		
+	</body>
+</html>
